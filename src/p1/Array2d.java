@@ -1,3 +1,4 @@
+package p1;
 public class Array2d {
     public static void main(String[] args) {
         int k=0;
