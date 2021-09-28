@@ -5,7 +5,7 @@ public class Student {
     private String name;
     private int rollno;
     Scanner s=new Scanner(System.in);
-    Student()
+    public Student()
     {
         System.out.println("Enter name");
         name=s.nextLine();
