@@ -1,4 +1,4 @@
-package _abstract;
+package lambda;
 @FunctionalInterface
 public interface i1 {
     void m1();
