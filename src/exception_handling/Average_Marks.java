@@ -11,16 +11,16 @@ class UserDefinedException extends Exception
 }
 public class Average_Marks {
     Scanner sc=new Scanner(System.in);
-    String name;Integer[] marks;int sum;
+    String name;int[] marks;int sum;
     Average_Marks()throws UserDefinedException,NumberFormatException
     {
         sum=0;
         System.out.println("Enter name of student");
         String name=sc.nextLine();
-        marks=new Integer[3];
+        marks=new int[3];
         System.out.println("Enter marks of "+name);
         for (int i = 0; i < 3; i++) {
-            marks[i] = Integer.valueOf(sc.next());
+            marks[i] = Integer.parseInt(sc.next());
             if (marks[i] < 0) {
                 throw new UserDefinedException("Marks cannot be Negative");
             } else if (marks[i] > 100) {

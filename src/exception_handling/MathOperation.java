@@ -1,12 +1,12 @@
 package exception_handling;
 public class MathOperation {
     public static void main(String[] args) {
-        Integer[] ar =new Integer[args.length];
+        int[] ar =new int[args.length];
         try
         {
             int sum=0;
             for(int i=0;i< args.length;i++){
-                ar[i]=Integer.valueOf(args[i]);
+                ar[i]=Integer.parseInt(args[i]);
                 sum=sum+ar[i];
             }
             float avg = (float)(sum / ar.length);
@@ -14,7 +14,7 @@ public class MathOperation {
         }
         catch (ArithmeticException|NumberFormatException e)
         {
-            System.out.println(String.valueOf(e.getClass()).substring(String.valueOf(e.getClass()).indexOf(' ')+1));
+            System.out.println(e.getClass().getName());
         }
     }
 }
