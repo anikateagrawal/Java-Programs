@@ -9,7 +9,7 @@ public class Internal {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Internal_Marks", "root", "");
-        String phone="9319903030 tyttty uhuyu 07676767697";
+        String phone="9995566655 tyttty uhuyu 07676767697";
         String name="Aditya Ani Ram";
         Pattern p=Pattern.compile("(0|91)?[7-9][0-9]{9}");
         Pattern p2=Pattern.compile("[ar][a-zA-Z]*",Pattern.CASE_INSENSITIVE);
