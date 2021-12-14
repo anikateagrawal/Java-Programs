@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 public class email {
     public static void main(String[] args) {
         String target = "neeraj@rediff.com";
-        Pattern p = Pattern.compile("[a-zA-Z0-9_.]+[@](gmail|yahoo|rediff)[.]com");
+        Pattern p = Pattern.compile("[\\w_.]+[@](gmail|yahoo|rediff)[.]com");
         Matcher m = p.matcher(target);
         int ctr = 0;
         while(m.find())
@@ -18,7 +18,13 @@ public class email {
             ctr++;
         }
         System.out.println(ctr);
-
     }
-
 }
+/*
+\s for space
+\S except space
+\d digit
+\D except digit
+\w any alphanumeric
+\W except alphanumeric or special characters
+ */
