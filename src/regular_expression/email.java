@@ -21,6 +21,7 @@ public class email {
     }
 }
 /*
+[^abc] except abc
 \s for space
 \S except space
 \d digit
