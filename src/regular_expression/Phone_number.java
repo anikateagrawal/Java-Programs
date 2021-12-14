@@ -10,7 +10,7 @@ public class Phone_number {
         String target=sc.nextLine();
         Pattern p=Pattern.compile("(0|91)?[7-9][0-9]{9}");
         Pattern p1=Pattern.compile("[a]+\\S");
-        Matcher m=p1.matcher(target);
+        Matcher m=p.matcher(target);
         int c=0;
         while(m.find())
         {
