@@ -21,6 +21,10 @@ public class email {
     }
 }
 /*
+{n} n number of times
++ atleast once
+* any number of times including 0
+? atmost once
 [^abc] except abc
 \s for space
 \S except space
