@@ -23,28 +23,24 @@ public class spiral {
                 for(int i=ir;i<=fr;i++)
                     ar[c++]=a[i][ic];
                 ic++;
-                System.out.println("first");
             }
             else if(k%4==1)
             {
                 for(int i=ic;i<=fc;i++)
                     ar[c++]=a[fr][i];
                 fr--;
-                System.out.println("Second");
             }
             else if(k%4==2)
             {
                 for(int i=fr;i>=ir;i--)
                     ar[c++]=a[i][fc];
                 fc--;
-                System.out.println("Third");
             }
             else
             {
                 for(int i=fc;i>=ic;i--)
                     ar[c++]=a[ir][i];
                 ir++;
-                System.out.println("Fourth");
             }
             k++;
         }
